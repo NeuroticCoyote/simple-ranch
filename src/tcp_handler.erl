@@ -23,7 +23,7 @@ init(Ref, Transport, _Opts) ->
 loop(Socket, Transport) ->
 	case Transport:recv(Socket, 0, 5000) of
 		{ok, Data} when Data =/= <<4>> ->
-            lager:info("Received data on tcp handler:~p", [Data]),
+			lager:info("Received data on tcp handler:~p", [Data]),
 			Transport:send(Socket, Data),
 			loop(Socket, Transport);
 		_ ->
