@@ -1,0 +1,17 @@
+{application, simple_ranch,
+ [{description, "A simple ranch application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {simple_ranch_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    ranch,
+    lager
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
