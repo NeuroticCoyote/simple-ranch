@@ -9,6 +9,11 @@ Usage
 -----
     $ make clean shell
 
+Testing
+-----
+    $ telnet localhost 10001
+    $ nc localhost 10001
+
 Logs
 -----
     log/crash.log
